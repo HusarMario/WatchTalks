@@ -1,1 +1,59 @@
-﻿
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+header {
+    background-color: #010a10;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: "Copperplate Gothic Bold", fantasy;
+    background-color: #ff6600;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ footer {
+     background-color: #010a10;
+     color: #ff6600;
+     text-align: left;
+     padding: 10px 0;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+ }
+
+
+
+
+
+
+
+
+
+
+
