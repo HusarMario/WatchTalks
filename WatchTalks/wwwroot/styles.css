@@ -4,8 +4,20 @@
     box-sizing: content-box;
 }
 
+body {
+    font-family: "Copperplate Gothic Bold", fantasy;
+    background-color: #fff;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 header {
     background-color: #010a10;
+    position: fixed;
+    width: 100%;
     text-align: center;
     padding: 10px 0;
 }
@@ -23,37 +35,102 @@ nav li {
 main {
     padding: 20px;
     background-color: #fff;
-    min-height: 100vh;
+    height: 80%;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
-body {
-    font-family: "Copperplate Gothic Bold", fantasy;
-    background-color: #ff6600;
-    color: #000;
-    min-height: 100vh;
+footer {
+    background-color: #010a10;
+    color: #ff6600;
+    text-align: left;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.episodeTable {
+    color: #ff6600;
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.episodeTable h2 {
+    color: #ff6600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.episodeTable .episodes {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.episodeTable .episodes td {
+    color: #010a10;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.episodeTable .episodes tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.episodeTable .episodes tr:hover {
+    background-color: #e0e0e0;
+}
+
+.newsPanel {
+    color: #ff6600;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+}
+
+.newsContainer {
+    color: #010a10; 
+    margin: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
- footer {
-     background-color: #010a10;
-     color: #ff6600;
-     text-align: left;
-     padding: 10px 0;
-     position: fixed;
-     bottom: 0;
-     width: 100%;
- }
+.newsArrow {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 
+.newsArrow.left {
+    order: 0;
+}
 
+.newsArrow.right {
+    order: 4;
+}
 
+.newsBox {
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
 
-
-
-
-
-
-
-
+.newsBox.centered {
+    margin: 0 auto;
+}
