@@ -1,0 +1,79 @@
+﻿@page
+@model WatchTalks.Pages.Library
+@{
+    ViewData["Title"] = "Library";
+}
+
+<div class="container libraryFilter">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="searchBox"> <h6>Search</h6></label>
+                <input type="text" class="form-control" id="searchBox" placeholder="Search...">
+            </div>
+        </div>
+        
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="Genre"><h6>Genre</h6></label>
+                <select class="form-control" id="Genre">
+                    <option value="" >Select..</option>
+                    <option value="option1">TO DO</option>
+                    <option value="option2">TO DO</option>
+                    <option value="option3">TO DO</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="Country"><h6>Country</h6></label>
+                <select class="form-control" id="Country">
+                    <option value="">Select..</option>
+                    <option value="option1">TO DO</option>
+                    <option value="option2">TO DO</option>
+                    <option value="option3">TO DO</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="SortBy"><h6>Sort by</h6></label>
+                <select class="form-control" id="SortBy">
+                    <option value="">Select..</option>
+                    <option value="option1">TO DO</option>
+                    <option value="option2">TO DO</option>
+                    <option value="option3">TO DO</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12 indexRow">
+            @for (var i = 1; i <= 10; i++)
+            {
+                <button class="indexButton btn-sm"><h6>@(i.ToString())</h6></button>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="album ">
+    <div class="container">
+        @for (var i = 1; i <= 4; i++)
+        {
+            <div class="row movieRow">
+                @for (var j = 1; j <= 6; j++)
+                {
+                    <div class="col-md-2 movieCard">
+                        <img class="card-img-top" src="pictures/poster.png" alt="MoviePoster">
+                        <h4 class="card-title">Card title</h4>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
