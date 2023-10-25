@@ -60,20 +60,17 @@
     </div>
 </div>
 
-<div class="album ">
+<div class="album">
     <div class="container">
-        @for (var i = 1; i <= 4; i++)
-        {
             <div class="row movieRow">
-                @for (var j = 1; j <= 6; j++)
+                @for (var j = 1; j <= 30; j++)
                 {
-                    <div class="col-md-2 movieCard">
+                    <div class="col-12 col-md-6 col-lg-2 movieCard movieCard">
                         <img class="card-img-top" src="pictures/poster.png" alt="MoviePoster">
                         <h4 class="card-title">Card title</h4>
                     </div>
                 }
             </div>
-        }
     </div>
 </div>
 
