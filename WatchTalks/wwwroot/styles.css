@@ -85,6 +85,12 @@ footer {
     transition: transform 0.5s ease;
     
     background-color: #fff;
+    text-decoration: none;
+}
+
+a.row.cardContent{
+    color: #000;
+    text-decoration: none;
 }
 
 .cardContent:hover {
@@ -120,7 +126,7 @@ footer {
 }
 
 .cardText {
-    text-align: left;
+    text-align: justify;
     margin-top: 10px;
     width: auto;
     height: 100%;
@@ -210,6 +216,123 @@ footer {
 }
 /* Album */
 
+/* Press Item */
+.pressItem {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.pressTitle h1 {
+    color: #000000; 
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.pressInfo {
+    border: black 3px solid;
+    border-radius: 20px;
+    background: #ff6600;
+    width: fit-content;
+    min-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pressMain h6 {
+    margin-top: 20px;
+    font-size: 20px;    
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.pressText {
+    margin-top: 20px;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify; 
+}
+
+.pressPicture {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .pressPicture img {
+        display: none;
+    }
+}
+/* Press Item */
+
+/* Comment section */
+.commentSection {
+    background: #ff6600;
+    border: black 3pt solid;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.commentSection .indexRow {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.comment {
+    margin-top: 20px;
+    text-align: left;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.commentHeader {
+    width: 25%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profilePicture {
+    width: 150px;
+    height: 150px;
+}
+
+
+.userInfo {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.profileName {
+    font-weight: bold;
+}
+
+.commentTime {
+    color: #888;
+    font-size: 12px;
+}
+
+.commentText {
+    text-align: justify;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .profilePicture {
+        display: none;
+    }
+}
+/* Comment section */
 
 
 
