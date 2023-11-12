@@ -1,0 +1,51 @@
+﻿@page
+@model WatchTalks.Pages.Home
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container episodeTable table-responsive">
+	<h2>Latest episodes</h2>
+	<table class="table  table-striped table-bordered table-hover table-responsive">
+		<tbody>
+		@for (var i = 0; i < 8; i++)
+		{
+			<tr>
+				<th scope="col" style="width: 10%;">Date</th>
+				<th scope="col" style="width: 10%;">S0X E0X</th>
+				<th scope="col" style="width: 30%;">TV Show</th>
+				<th scope="col" style="width: 35%;">Episode Title</th>
+				<th scope="col" style="width: 15%;">Rating</th>
+			</tr>
+		}
+		</tbody>
+	</table>
+</div>
+
+<div class="container news">    
+    <h2>Latest news</h2>
+    <div class="grid">
+        @for (var i = 0; i < 5; i++)
+        {
+            <a href="PressItem" class="row cardContent">
+
+                <div class="col-4 col-md-none newsPicture d-none d-md-block">
+                    <div class="image-container">
+                        <img src="pictures/newsPage.png" alt="newsImg">
+                    </div>
+                </div>
+
+                <div class="col-11 col-md-7 newsText">
+                    <div>
+                        <div class="cardInfo">
+                            <div class="cardDate">xx. January xxxx</div>
+                            <div class="cardTitle">Title</div>
+                            <div class="cardShow">Show</div>
+                        </div>
+                        <div class="cardText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien eget mi proin. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Proin nibh nisl condimentum id venenatis a condimentum vitae. Diam ut venenatis tellus in metus vulputate. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Felis imperdiet proin fermentum leo vel orci. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Semper eget duis at tellus at. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Sed pulvinar proin gravida hendrerit lectus a. Dictum sit amet justo donec enim diam vulputate ut pharetra. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. </div>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+</div>
