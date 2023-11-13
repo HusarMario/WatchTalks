@@ -1,1 +1,33 @@
-﻿
+﻿/* Globálne nastavenia */
+* {
+    font-family: "Bookman Old Style", serif;
+}
+
+/* Nastavenie hlavičky stránok */
+.pageHeader {
+    background-color: #000;
+    color: orange;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Formatovanie linkov na navigation bare */
+.pageHeader a {
+    color: orange;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #fff; /* Change the color to your preferred color */
+}
+
+/* Nastavenie pätičky stránok */
+.pageFooter {
+    background-color: #000;
+    color: orange;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
