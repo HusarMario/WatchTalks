@@ -105,13 +105,13 @@ h1 {
 
 .latestNews .card .card-text {
     width: 90%;
-    height: 45%;
+    height: 46%;
     overflow: hidden;
 }
 
 .latestNews .card .card-more {
     width: 90%;
-    height: 5%;
+    height: 4%;
 }
 
 .latestNewsDiv .arrow {
@@ -126,3 +126,74 @@ h1 {
         display: none; /* Hide the card on smaller screens */
     }
 }
+
+/* Nastavenie filtrov pre library browser */
+.libraryFilter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: black;
+    border: 2px solid orange;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.libraryFilter label {
+    color: orange;
+}
+
+.libraryFilter .searchButton {
+    margin-top: 10px;
+    height: 50px;
+}
+
+/* Nastavenie cislovania zaznamov */
+.indexRow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: black;
+}
+
+/* Nastavenie albumu zaznamov */
+
+.seriesAlbum {
+    background: black;
+    border: 2px solid orange;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.seriesRow {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.seriesAlbum .seriesCard{
+    margin: 10px;
+    width: 180px;
+    height: 300px;
+}
+
+.seriesAlbum .seriesCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.seriesAlbum .seriesCard .card-img-top {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.seriesAlbum .card-title {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    background: orange;
+}
+
+
+
