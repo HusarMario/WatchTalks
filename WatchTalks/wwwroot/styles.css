@@ -3,6 +3,10 @@
     font-family: "Bookman Old Style", serif;
 }
 
+h1 {
+    color: orange;
+}
+
 /* Nastavenie hlavičky stránok */
 .pageHeader {
     background-color: #000;
@@ -18,6 +22,7 @@
     text-decoration: none;
 }
 
+/* Nastavenie hover funckie na bielu farbu (cierna na ciernom pozadi sa strati) */
 .nav-link:hover {
     color: #fff; /* Change the color to your preferred color */
 }
@@ -31,3 +36,93 @@
     bottom: 0;
 }
 
+/* Nastavenie casti najnovsich epizod - Home page */
+.latestEpisodesDiv {
+    margin-top: 20px;
+    text-align: center;
+    background: black;
+    border: 2px solid orange;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.latestEpisodesTable {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.latestEpisodesTable table {
+    border: 5px solid black;
+}
+
+.latestEpisodesTable th {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Nastavenie casti najnovsich noviniek - Home page */
+.latestNewsDiv {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    background: black;
+    border: 2px solid orange;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.latestNews .card {
+    
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    background: orange;
+    width: 500px;
+    height: 400px;
+}
+
+.latestNewsList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latestNews .card .card-title {
+    margin: 10px;
+    width: 90%;
+    height: 10%;
+}
+
+.latestNews .card .card-img-top {
+    margin: 10px;
+    width: 90%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.latestNews .card .card-text {
+    width: 90%;
+    height: 45%;
+    overflow: hidden;
+}
+
+.latestNews .card .card-more {
+    width: 90%;
+    height: 5%;
+}
+
+.latestNewsDiv .arrow {
+    cursor: pointer;
+    font-size: 24px;
+    color: orange;
+}
+
+/* odstranuje druhu kartu pri mensich obrazovkach */
+@media (max-width: 1200px) {
+    .latestNews .cardHide {
+        display: none; /* Hide the card on smaller screens */
+    }
+}
