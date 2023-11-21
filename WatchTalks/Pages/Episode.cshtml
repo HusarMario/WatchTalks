@@ -1,0 +1,50 @@
+﻿@page
+@model WatchTalks.Pages.Episode
+
+@{
+    ViewData["Title"] = "Episode i";
+}
+
+<!DOCTYPE html>
+
+<div class="container episodeTitle">
+    <div class="row episodeInfo">
+        <div class="col-lg-4">
+            <h1>Title</h1>
+            <img class="img-thumbnail" src="https://via.placeholder.com/300x210">
+        </div>
+        <div class="col-lg-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien eget mi proin. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Proin nibh nisl condimentum id venenatis a condimentum vitae. Diam ut venenatis tellus in metus vulputate. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Felis imperdiet proin fermentum leo vel orci. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Semper eget duis at tellus at. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Sed pulvinar proin gravida hendrerit lectus a. Dictum sit amet justo donec enim diam vulputate ut pharetra. Magnis dis parturient montes nascetur ridiculus mus mauris vitae.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container commentSection">
+    @for (var i = 0; i < 4; i++)
+    {
+        <div class="comment">
+            <div class="commentHeader">
+                <div class="profilePic">
+                    <img class="profilePicture" src="pictures/profilePic.png" alt="profilePicture">
+                </div>
+                <div class="userInfo">
+                    <div class="profileName">Author</div>
+                    <div class="commentTime">x hours ago</div>
+                </div>
+            </div>
+            <div class="commentText">
+                Pretium est ante in lobortis facilisis molestie purus scelerisque arcu erat vel, aenean tempor mauris nullam posuere consectetur orci eros dolor quam phasellus, consequat sed egestas cubilia ullamcorper proin semper risus potenti venenatis. Per litora mauris euismod accumsan odio cursus, fames mollis maecenas ut aenean adipiscing massa, est diam felis lacinia suspendisse. Nam taciti finibus urna facilisi nisi volutpat mauris, fusce vivamus dui lectus faucibus penatibus. Sagittis convallis velit mauris leo nunc diam volutpat facilisi nascetur natoque, nam auctor amet finibus laoreet vulputate morbi cursus nec tincidunt accumsan, ex eros imperdiet magna neque etiam ac vitae hendrerit. Proin consequat et morbi nam viverra magna convallis ut aliquam consectetur potenti ultrices condimentum phasellus duis platea, imperdiet sagittis malesuada mollis elit leo accumsan neque vulputate lorem habitant ullamcorper rutrum hac eu. Fames blandit lobortis turpis magnis leo taciti, finibus venenatis justo maecenas scelerisque libero quisque, vel mus praesent sed suscipit. Tempus ornare dolor nullam pretium cursus aptent eu augue vivamus, at class venenatis non lacinia etiam tellus dui primis, ac enim vehicula ultrices suspendisse adipiscing nec lacus.
+            </div>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-12 indexRow">
+            <button class="indexButton btn-sm">First</button>
+            <button class="indexButton btn-sm">Prev</button>
+            
+            <button class="indexButton btn-sm">Next</button>
+            <button class="indexButton btn-sm">Last</button>
+        </div>
+    </div>
+</div>

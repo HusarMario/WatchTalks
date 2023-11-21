@@ -197,21 +197,21 @@ a.row.cardContent{
 /* Library Filter */
 
 /* Album */
-.movieRow {
+.seriesRow {
     margin-top: 15px;
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
 }
 
-.movieCard{
+.seriesCard{
     margin: 10px;
     width: 180px;
     height: 300px;
 
 }
 
-.movieCard:hover {
+.seriesCard:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }

@@ -7,6 +7,10 @@ h1 {
     color: orange;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Nastavenie hlavičky stránok */
 .pageHeader {
     background-color: #000;
@@ -75,7 +79,6 @@ h1 {
 }
 
 .latestNews .card {
-    
     display: flex;
     align-items: center;
     margin: 20px;
@@ -106,6 +109,7 @@ h1 {
 .latestNews .card .card-text {
     width: 90%;
     height: 46%;
+    text-align: justify;
     overflow: hidden;
 }
 
@@ -177,9 +181,14 @@ h1 {
     height: 300px;
 }
 
+.seriesAlbum .seriesCard a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
 .seriesAlbum .seriesCard:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .seriesAlbum .seriesCard .card-img-top {
@@ -195,5 +204,142 @@ h1 {
     background: orange;
 }
 
+/* Nastavenie stranky pre serial */
+.seriesTitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: black;
+    border: 2px solid orange;
+    border-radius: 25px;
+    padding-bottom: 10px;
+}
+
+.seriesTitle p {
+    text-align: justify;
+    color: orange;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.episodeList {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    background: black;
+    border: 2px solid orange;
+    border-radius: 25px;
+}
+
+.episodeList .episodeInfo {
+    margin: 20px;
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+    background: orange;
+    border: 2px solid black;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.episodeList .episodeInfo h1 {
+    color: black;
+}
+
+.episodeList .episodeInfo img {
+    margin-top: 10px;
+}
+
+.episodeList .episodeInfo p {
+    text-align: justify;
+    color: black;
+    padding: 28px;
+}
+
+.episodeList .episodeInfo a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+/* Nastavenie stranky pre epizodu */
+.episodeTitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: black;
+    border: 2px solid orange;
+    border-radius: 25px;
+    padding-bottom: 10px;
+}
+.episodeTitle p {
+    text-align: justify;
+    color: orange;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.episodeTitle .col-lg-8 {
+    display: flex;
+    align-items: center;
+}
+
+/* Comment section */
+.commentSection {
+    background: orange;
+    border: black 3pt solid;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.commentSection .indexRow {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.comment {
+    margin-top: 20px;
+    text-align: left;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.commentHeader {
+    width: 25%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profilePicture {
+    width: 150px;
+    height: 150px;
+}
 
 
+.userInfo {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.profileName {
+    font-weight: bold;
+}
+
+.commentTime {
+    color: #888;
+    font-size: 12px;
+}
+
+.commentText {
+    text-align: justify;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .profilePicture {
+        display: none;
+    }
+}
