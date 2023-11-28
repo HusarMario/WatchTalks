@@ -101,7 +101,7 @@ a {
 
 .latestNews .card .card-img-top {
     margin: 10px;
-    width: 90%;
+    width: 300px;
     height: 40%;
     object-fit: cover;
 }
@@ -342,4 +342,87 @@ a {
     .profilePicture {
         display: none;
     }
+}
+
+/* Press Item */
+.pressItem {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    background: orange;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.pressTitle h1 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.pressInfo {
+    border: black 3px solid;
+    border-radius: 20px;
+    background: white;
+    width: fit-content;
+    min-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pressMain h6 {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.pressText {
+    margin-top: 20px;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.pressPicture {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .pressPicture img {
+        display: none;
+    }
+}
+
+.profile {
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid orange
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-email {
+    color: #777;
 }

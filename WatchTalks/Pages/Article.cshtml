@@ -1,0 +1,67 @@
+﻿@page
+@model WatchTalks.Pages.Article
+
+@{
+    ViewData["Title"] = "Article i";
+}
+
+
+<div class="container pressItem">
+    <div class="pressInfo">
+        <div class="pressDate">xx. January xxxx</div>
+        <div class="pressTitle"><h1>Title</h1></div>
+        <div class="pressShow">Show</div>
+    </div>
+    <div class="pressMain">
+        <h6>Lorem ipsum dolor sit amet consectetur adipiscing elit per, fames egestas dapibus vestibulum iaculis litora auctor ullamcorper, velit sodales tellus nostra habitasse ad est. Curabitur dictumst orci donec risus ad phasellus quisque efficitur faucibus, malesuada imperdiet aliquam hac fermentum class iaculis vel justo volutpat, sed varius blandit nec diam metus condimentum ultrices. Vel nisl scelerisque erat blandit mollis vulputate nunc libero, torquent pharetra primis pellentesque nulla fusce cursus consectetur, tempor laoreet nullam nisi senectus facilisis posuere. </h6>
+    </div>
+    
+    <div class="pressText">
+        Turpis commodo efficitur mauris accumsan egestas elementum posuere fames, semper nulla lobortis facilisi augue curae sapien eget, suscipit vitae rhoncus volutpat cursus malesuada nisl. Dolor eros tempor eu posuere a quam montes sociosqu per metus scelerisque ligula et dignissim, lobortis purus bibendum rhoncus consequat feugiat fringilla natoque pellentesque ullamcorper proin dictum facilisi. Fermentum adipiscing faucibus nulla nunc velit senectus donec magna ante laoreet habitant finibus efficitur varius, nullam massa dis tristique maximus vitae suscipit vehicula sagittis scelerisque mollis risus feugiat. Massa luctus cubilia fermentum nisl sit ultrices dapibus litora ac neque, ridiculus maecenas nostra vivamus vulputate nunc ex dis per libero pretium, fringilla vitae tellus non mus dui pellentesque risus elit. Suspendisse pulvinar habitasse mattis sagittis bibendum aptent enim senectus diam mollis, sed est interdum etiam in non nisl iaculis hendrerit montes risus, purus curae dapibus hac ullamcorper primis taciti suscipit nam. Lectus litora scelerisque taciti lacinia dapibus facilisi maximus tellus, penatibus blandit per mauris ex rhoncus malesuada suspendisse sed, hendrerit magnis pulvinar odio praesent auctor luctus. Tortor pellentesque potenti duis nunc sagittis suscipit eget egestas arcu purus auctor, tellus conubia volutpat malesuada natoque sodales morbi facilisi eros ex posuere, nibh elementum venenatis lectus ut nam semper lacinia litora quam. Pretium tristique dis auctor elementum sed pharetra sapien faucibus tortor, mi justo ornare quis platea dictum habitant nulla lacinia nullam, augue consectetur sociosqu ex duis euismod risus vel. Class elit proin at risus volutpat magna ullamcorper massa litora platea primis etiam, mi duis tincidunt dolor pretium enim neque eu imperdiet iaculis sapien.
+    </div>
+    
+    
+    <div class="pressPicture">
+        <img src="pictures/newsPage.png" alt="newsImg">
+    </div>
+    
+    
+    
+    <div class="pressText">
+        Nibh sodales ridiculus habitasse hendrerit cursus dictum iaculis pellentesque torquent cras, tristique eros eu maximus interdum nulla ut egestas commodo, et tellus nullam consectetur aenean diam orci senectus donec. Himenaeos taciti maximus dapibus sit nec sociosqu torquent fringilla suspendisse natoque, pretium consectetur pellentesque vehicula lacus mattis per nam dignissim auctor, primis semper sagittis dui venenatis ligula tempus mi curae. Mollis consectetur sapien ac cras aliquet sed donec nam, praesent arcu nulla dolor ante nostra commodo per libero, facilisi sodales vestibulum orci pharetra proin diam. Consectetur cursus aenean consequat mattis condimentum feugiat id turpis habitasse enim nisi magnis, vel molestie nullam laoreet suscipit convallis phasellus venenatis a integer. Consectetur non nulla phasellus lacus montes pretium blandit ultricies tortor faucibus, senectus praesent nullam vestibulum maecenas a natoque ligula leo, tellus venenatis rutrum curae hac risus semper vehicula iaculis. Est eros massa erat montes penatibus vulputate nam venenatis dis integer cursus adipiscing, enim proin molestie dignissim class elit lacinia aptent laoreet natoque finibus nascetur, hac in feugiat imperdiet tempor netus vitae ut elementum suscipit vehicula. Consectetur dapibus elementum ornare ultrices posuere vestibulum in, litora aenean efficitur rhoncus orci arcu, ante mus purus ligula tincidunt ultricies.
+    </div>
+    
+    <div class="pressText">
+        Pretium est ante in lobortis facilisis molestie purus scelerisque arcu erat vel, aenean tempor mauris nullam posuere consectetur orci eros dolor quam phasellus, consequat sed egestas cubilia ullamcorper proin semper risus potenti venenatis. Per litora mauris euismod accumsan odio cursus, fames mollis maecenas ut aenean adipiscing massa, est diam felis lacinia suspendisse. Nam taciti finibus urna facilisi nisi volutpat mauris, fusce vivamus dui lectus faucibus penatibus. Sagittis convallis velit mauris leo nunc diam volutpat facilisi nascetur natoque, nam auctor amet finibus laoreet vulputate morbi cursus nec tincidunt accumsan, ex eros imperdiet magna neque etiam ac vitae hendrerit. Proin consequat et morbi nam viverra magna convallis ut aliquam consectetur potenti ultrices condimentum phasellus duis platea, imperdiet sagittis malesuada mollis elit leo accumsan neque vulputate lorem habitant ullamcorper rutrum hac eu. Fames blandit lobortis turpis magnis leo taciti, finibus venenatis justo maecenas scelerisque libero quisque, vel mus praesent sed suscipit. Tempus ornare dolor nullam pretium cursus aptent eu augue vivamus, at class venenatis non lacinia etiam tellus dui primis, ac enim vehicula ultrices suspendisse adipiscing nec lacus.
+    </div>
+</div>
+
+<div class="container commentSection">
+    @for (var i = 0; i < 4; i++)
+    {
+        <div class="comment">
+            <div class="commentHeader">
+                <div class="profilePic">
+                    <img class="profilePicture" src="pictures/profilePic.png" alt="profilePicture">
+                </div>
+                <div class="userInfo">
+                    <div class="profileName">Author</div>
+                    <div class="commentTime">x hours ago</div>
+                </div>
+            </div>
+            <div class="commentText">
+                Pretium est ante in lobortis facilisis molestie purus scelerisque arcu erat vel, aenean tempor mauris nullam posuere consectetur orci eros dolor quam phasellus, consequat sed egestas cubilia ullamcorper proin semper risus potenti venenatis. Per litora mauris euismod accumsan odio cursus, fames mollis maecenas ut aenean adipiscing massa, est diam felis lacinia suspendisse. Nam taciti finibus urna facilisi nisi volutpat mauris, fusce vivamus dui lectus faucibus penatibus. Sagittis convallis velit mauris leo nunc diam volutpat facilisi nascetur natoque, nam auctor amet finibus laoreet vulputate morbi cursus nec tincidunt accumsan, ex eros imperdiet magna neque etiam ac vitae hendrerit. Proin consequat et morbi nam viverra magna convallis ut aliquam consectetur potenti ultrices condimentum phasellus duis platea, imperdiet sagittis malesuada mollis elit leo accumsan neque vulputate lorem habitant ullamcorper rutrum hac eu. Fames blandit lobortis turpis magnis leo taciti, finibus venenatis justo maecenas scelerisque libero quisque, vel mus praesent sed suscipit. Tempus ornare dolor nullam pretium cursus aptent eu augue vivamus, at class venenatis non lacinia etiam tellus dui primis, ac enim vehicula ultrices suspendisse adipiscing nec lacus.
+            </div>
+        </div>
+    }
+    
+    <div class="row">
+            <div class="col-12 indexRow">
+                <button class="indexButton btn-sm">First</button>
+                <button class="indexButton btn-sm">Prev</button>
+                    
+                <button class="indexButton btn-sm">Next</button>
+                <button class="indexButton btn-sm">Last</button>
+            </div>
+        </div>
+</div>

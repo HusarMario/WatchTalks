@@ -2,7 +2,7 @@
 
 namespace WatchTalks.Pages;
 
-public class Home : PageModel
+public class Profile : PageModel
 {
     public void OnGet()
     {
