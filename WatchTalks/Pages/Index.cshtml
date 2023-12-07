@@ -9,10 +9,10 @@
     <div class="container latestEpisodesTable table-responsive">
         <table class="table table-striped table-bordered table-hover">
             <tbody>
-            @for (var i = 0; i < 6; i++)
+            @for (var i = 0; i < Model.Series.Count; i++)
             {
                 <tr onclick="window.location.href='/Episode'">
-                    <th scope="col" style="width: 10%;">31.12.1999</th>
+                    <th scope="col" style="width: 10%;">31.11.1959</th>
                     <th scope="col" style="width: 35%;">Nazov celeho serialuuuuuuuuuuuuuuuuuuu</th>
                     <th scope="col" style="width: 10%;">S11 E22</th>
                     <th scope="col" style="width: 35%;">Nazov celej epizodyyyyyyyyyyyyyyyyyyyy</th>
